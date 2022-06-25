@@ -2,6 +2,8 @@ version: '2.6'
 services:
   go:
     image: golang:1.19-rc
+    ports:
+      - 3000:3000
     volumes:
       - ./data/go:/go-work
     working_dir: /go-work
